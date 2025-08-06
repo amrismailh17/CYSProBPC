@@ -21,3 +21,16 @@ function toggleContent() {
                 icon.textContent = "+";
             }
         }
+function toggleContent1() {
+            var content = document.getElementById("extraContent1");
+            var icon = document.getElementById("toggleIcon1");
+
+            content.classList.toggle("show");
+
+            // تغيير الرمز حسب الحالة
+            if (content.classList.contains("show")) {
+                icon.textContent = "-";
+            } else {
+                icon.textContent = "+";
+            }
+        }
