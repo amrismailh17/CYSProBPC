@@ -7,3 +7,17 @@ document.querySelectorAll('nav a').forEach(link => {
     });
   });
 });
+
+function toggleContent() {
+            var content = document.getElementById("extraContent");
+            var icon = document.getElementById("toggleIcon");
+
+            content.classList.toggle("show");
+
+            // تغيير الرمز حسب الحالة
+            if (content.classList.contains("show")) {
+                icon.textContent = "-";
+            } else {
+                icon.textContent = "+";
+            }
+        }
